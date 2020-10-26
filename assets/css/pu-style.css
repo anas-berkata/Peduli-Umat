@@ -1,0 +1,503 @@
+/* Semua Default Style Peduli Umat */
+body {
+  font-family: 'Poppins Regular', sans-serif;
+  font-size: 14px;
+}
+
+.bg-green {
+  background-color: #57BA86;
+}
+
+.text-green {
+  color: #57BA86;
+}
+
+/* MENU & NAVIGATION */
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #57BA86;
+}
+
+.nav-item {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #57BA86;
+  transition: .3s ease-in-out;
+}
+
+/* .nav-link:hover,
+.nav-link a:hover {
+  background-color: #57BA86;
+  color: #fff;
+  border-radius: 5px;
+} */
+
+.btn-main {
+  background-color: #57BA86;
+  background-image: linear-gradient(to right, #9AD69D, #66CD9A);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.btn-no-background {
+  font-size: 14px;
+}
+
+/* HEADER / HERO & JUMBOTRON */
+
+.jumbotron {
+  background-color: #fff;
+  padding-top: 150px;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: 'Lato Black';
+}
+
+.display-5 {
+  font-size: 28px;
+}
+
+hr.devider {
+  width: 50px;
+  /* background-color: #57BA86; */
+  border: 2px solid #57BA86;
+  /* max-width: 3.25rem; */
+}
+
+.card {
+  /* border-radius: 40px; */
+  border-radius: 15px;
+  background-color: #F9FBFB;
+  border: 0px;
+}
+
+.card:hover {
+  background-color: #fff;
+  box-shadow: 0 0 30px #e0e0e0;
+  transition: .3s ease-in-out;
+}
+
+.card-title {
+  font-family: 'Lato Bold';
+  font-size: 18px;
+}
+
+.card-title a {
+  color: #000000;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* .card-body {
+  width: 90%;
+} */
+
+.card-rounded-40 {
+  border-radius: 40px;
+  ;
+}
+
+section.about {
+  background-color: #fafafa;
+}
+
+.progress-bar {
+  background-color: #57BA86;
+}
+
+/* STORIES */
+section.stories {
+  background-image: url('../img/backgrounds/bg-02.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-color: #fff;
+}
+
+section.stories img:hover {
+  margin-top: -10px;
+  transition: .3s ease-in-out;
+}
+
+section.info-program-pu img:hover {
+  margin-top: -10px;
+  transition: .3s ease-in-out;
+}
+
+/* CONTACT */
+section.map {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.head-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 450px;
+  background-color: #101428;
+  opacity: 0.7;
+  z-index: 0;
+  color: #fff;
+}
+
+/* .head-contact h4,
+.head-contact p {
+  opacity: 1 !important;
+  color: #fff;
+} */
+
+.head-contact h4 {
+  margin-top: 150px;
+}
+
+section.contact {
+  position: relative;
+  z-index: 1;
+}
+
+.form-contact {
+  position: relative;
+  box-shadow: 0 0 30px #e0e0e0;
+  padding: 50px;
+  border-radius: 40px 0 0 40px;
+  z-index: 1;
+  /* margin-top: -100px; */
+}
+
+input.form-control,
+textarea.form-control {
+  border-radius: 50px;
+  height: 50px;
+  background-color: #F0F5F9;
+  border: 0;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+textarea.form-control {
+  height: 210px;
+  padding-left: 40px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.address {
+  background-image: linear-gradient(to right, #9AD69D, #66CD9A);
+  border-radius: 0 40px 40px 0;
+  padding: 50px 20px 30px 30px;
+}
+
+/* FOOTER */
+
+section.footer {
+  background-color: #101428;
+}
+
+.list-group-item {
+  background-color: transparent;
+}
+
+.list-group-item a {
+  color: #fff;
+}
+
+.list-group-item a:hover {
+  color: #57BA86;
+}
+
+li.list-inline-item a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+li.list-inline-item a:hover {
+  color: #57BA86;
+  transition: .3s ease-in-out;
+}
+
+/* Media */
+iframe.embed-responsive-item {
+  border-radius: 15px;
+}
+
+
+
+/* Info Panel */
+.info-panel {
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #9AD69D, #66CD9A);
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #ACACAC;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .display-5,
+  .display-6 {
+    text-align: center;
+  }
+
+  .jumbotron p {
+    text-align: center;
+  }
+
+  section.about-pu img {
+    width: 100%;
+  }
+
+  section.about-pu p {
+    text-align: center;
+  }
+
+  section.stories {
+    background-color: #57BA86;
+    background-image: none;
+  }
+
+  .carousel-inner {
+    max-height: 500px;
+  }
+
+  .form-contact {
+    border-radius: 40px 40px 0 0;
+  }
+
+  .address {
+    border-radius: 0 0 40px 40px;
+  }
+}
+
+
+
+/* ========================================= END ========================================= */
+
+
+
+
+/*
+
+CAROUSEL
+
+*/
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+  width: 8%;
+  display: inline-block;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Show 4th slide on md  if col-md-4*/
+  .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  /* Show 3rd slide on sm  if col-sm-6*/
+  .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .carousel-item {
+    margin-right: 0;
+  }
+
+  /* show 2 items */
+  .carousel-inner .active+.carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left+.carousel-item,
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right+.carousel-item,
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+/*MD*/
+@media (min-width: 768px) {
+
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active+.carousel-item+.carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+    transition: none;
+  }
+
+
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+
+/*LG */
+@media (min-width: 991px) {
+
+  /* show 4th item */
+  .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+    transition: none;
+  }
+
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+}
