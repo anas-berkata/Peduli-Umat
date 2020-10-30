@@ -9,5 +9,6 @@ Add Page
 - Campaign Detail
 - Stories Detail
 - Login Page
+- Register Page
 
-and more bugs
+and more bugs on all page
