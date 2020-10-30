@@ -329,6 +329,17 @@ textarea.form-control {
   border-radius: 20px;
 }
 
+input.form-code-verify {
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 3px #57BA86 solid;
+  background-color: #F0F5F9;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  margin: 0px 15px 30px;
+}
+
 .address {
   background-image: linear-gradient(to right, #9AD69D, #66CD9A);
   border-radius: 0 40px 40px 0;
