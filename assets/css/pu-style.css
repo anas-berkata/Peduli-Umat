@@ -339,6 +339,7 @@ textarea.form-control {
   position: absolute;
   right: 20px;
   background-color: transparent;
+  padding-top: 2px;
 }
 
 .input-group-append .input-group-text {
@@ -438,7 +439,20 @@ section.login-page {
   margin-bottom: 30px;
 }
 
+.btn-auth {
+  padding: 12px 0;
+}
 
+/* LOGIN MOBILE */
+@media (min-width: 481px) and (max-width: 767px) {
+  .display-none {
+    display: none;
+  }
+
+  .login-form {
+    border-radius: 40px;
+  }
+}
 
 
 /* MOBILE */
