@@ -1,8 +1,12 @@
 # Peduli-Umat
 
-5 Page
+Add Page
 - Home
 - About Us
 - Campaign
 - Term
 - Contact
+- Campaign Detail
+- Stories Detail
+
+and more bugs
