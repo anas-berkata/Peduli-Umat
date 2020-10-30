@@ -1,5 +1,9 @@
 /* Semua Default Style Peduli Umat */
 body {
+  width: 100%;
+  background-image: url('../img/backgrounds/bg-01.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   font-family: 'Poppins Regular', sans-serif;
   font-size: 14px;
 }
@@ -36,9 +40,9 @@ a {
   color: #57BA86;
 }
 
-.nav .badge-pill.active {
-  /* background-color: #57BA86; */
-}
+/* .nav .badge-pill.active {
+  background-color: #57BA86;
+} */
 
 .badge-pill {
   padding: 5px 7px;
@@ -82,7 +86,7 @@ a {
 /* HEADER / HERO & JUMBOTRON */
 
 .jumbotron {
-  background-color: #fff;
+  background-color: transparent;
   padding-top: 150px;
 }
 
@@ -297,7 +301,7 @@ section.map {
 
 section.contact {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .form-contact {
@@ -316,11 +320,10 @@ textarea.form-control {
   background-color: #F0F5F9;
   border: 0;
   padding-left: 20px;
-  margin-bottom: 30px;
 }
 
 textarea.form-control {
-  height: 210px;
+  height: 200px;
   padding-left: 20px;
   padding-top: 20px;
   border-radius: 20px;
@@ -407,6 +410,36 @@ iframe.embed-responsive-item {
   margin-top: -5px;
   font-weight: 200;
 }
+
+
+
+
+/* LOGIN */
+section.login-page {
+  margin-top: 125px;
+}
+
+.login-hero {
+  background-color: #57BA86;
+  background-image: linear-gradient(to right, #9AD69D, #66CD9A);
+  border-radius: 40px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 0px 40px 40px 0;
+}
+
+.brand {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
 
 /* MOBILE */
 
