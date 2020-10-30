@@ -8,5 +8,6 @@ Add Page
 - Contact
 - Campaign Detail
 - Stories Detail
+- Login Page
 
 and more bugs
