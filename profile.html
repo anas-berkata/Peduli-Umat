@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLE -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Peduli Umat Style -->
+    <link rel="stylesheet" href="assets/css/pu-user-style.css">
+
+    <!-- FONTS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <!-- Font online : Lato / Poppins Font Google Online-->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"> -->
+
+    <!-- Font offline : Lato / Poppins font web / @font-face -->
+    <link rel="stylesheet" href="assets/font/poppins/style.css">
+    <link rel="stylesheet" href="assets/font/lato/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/logos/Favicon.png">
+
+    <!-- JQUERY LIBRARY ONLY <HEAD> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <title>Peduli Umat</title>
+</head>
+
+
+<body id="page-top">
+
+    <!-- PAGE WRAPPER-->
+    <div id="wrapper">
+
+        <!-- SIDEBAR NAVIGATION -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="assets/img/logos/Logo Only.png">
+                </div>
+                <div class="sidebar-brand-text mx-3">Peduli Umat</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Donation
+            </div>
+
+            <!-- Nav Item - Donation -->
+            <li class="nav-item active">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Donation</span></a>
+            </li>
+
+            <!-- Nav Item - Adoption -->
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-child"></i>
+                    <span>Adoption</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Profile
+            </div>
+
+            <!-- Nav Item - Personal Detail -->
+            <li class="nav-item">
+                <a class="nav-link" href="profile-detail.html">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Personal Detail</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Peduli Umat
+            </div>
+
+            <!-- Nav Item - Donation -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeduliUmat"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw"><img class="img-tr" src="assets/img/icons/Icon Peduli Umat sm.png"></i>
+                    <span>Peduli Umat</span>
+                </a>
+                <div id="collapsePeduliUmat" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Peduli Umat Menu:</h6>
+                        <a class="collapse-item" href="about-peduli-umat.html">Peduli Umat</a>
+                        <a class="collapse-item" href="helps.html">Helps</a>
+                        <a class="collapse-item" href="terms.html">Term & Conditions</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Nav Item - Term & Conditions -->
+            <li class="nav-item mb-5">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span></a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- END SIDEBAR NAVIGATION -->
+
+        <!-- CONTENT WRAPPER -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 pt-3 static-top">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3 ml-4">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="head-title pt-3 ml-4">
+                        <h5>My Donation</h5>
+                        <p class="small">Tuesday, 20/10/2020</p>
+                    </div>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+
+                            <!-- Dropdown - Search -->
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-search animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Temukan Donasi, Mitra dan Lainnya" aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Notification -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notification Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>
+                                        <span class="font-weight-bold">Donasi sebesar IDR. 200.000 untuk program
+                                            pembangunan Masjid Jami Al-Ikhlas berhasil!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>Donasi sebesar IDR.
+                                        1.000.000 untuk biaya pendidikan Muhammad Adam Nuh Berhasil!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>Donasi sebesar IDR.
+                                        250.000 untuk biaya pembangunan pondok pasantren al-ikhlas
+                                        pending!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid pl-5">
+
+                    <!-- Content Row Hero-->
+                    <div class="row my-3">
+                        <div class="col-lg-6 col-12 mb-3"><img class="img-fluid w-100"
+                                src="assets/img/hero/Hero Profile 01.png"></div>
+                        <div class="col-lg-6 col-12 mb-3"><img class="img-fluid w-100"
+                                src="assets/img/hero/Hero Profile 02.png"></div>
+                    </div>
+
+                    <!-- Content Row Donation -->
+                    <div class="row my-5">
+                        <nav class="col-lg-12">
+                            <!-- Tab Nav -->
+                            <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link col-lg-6 col-6 active" id="nav-donasi-saya-tab"
+                                    data-toggle="tab" href="#nav-donasi-saya" role="tab" aria-controls="nav-home"
+                                    aria-selected="true"><i class="fas fa-wallet mr-2"></i> Donasi Saya</a>
+                                <a class="nav-item nav-link col-lg-6 col-6" id="nav-donasi-rutin-tab" data-toggle="tab"
+                                    href="#nav-donasi-rutin" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false"><i class="fas fa-clock mr-2"></i> Donasi Rutin</a>
+                            </div>
+                        </nav>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content col-lg-12 pt-3" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-donasi-saya" role="tabpanel"
+                                aria-labelledby="nav-donasi-saya-tab">
+                                <div class="row">
+
+                                    <!-- Card 01 -->
+                                    <div class="col-lg-6">
+                                        <div class="card mb-3">
+                                            <div class="row">
+
+                                                <div class="col-lg-5 col-5">
+                                                    <div class="thumbnail">
+                                                        <a href="profile-donation-detail.html"><img
+                                                                class="card-img-left"
+                                                                src="assets/img/donation/program-01.jpg"></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-7 col-7">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 p-3">
+                                                            <h5 class="display-5"><a
+                                                                    href="profile-donation-detail.html">Bangun Panti
+                                                                    Tuna Netra Cerdas</a> <span
+                                                                    class="badge badge-primary">Infaq</span></h5>
+
+                                                            <ul class="list-group list-group-flush small pr-3">
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-map-marker-alt text-green mr-3"></i>
+                                                                    Bekasi</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-stopwatch text-blue mr-3"></i> 04
+                                                                    Oktober 2020</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-coins mr-3"></i> IDR. 200.000</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-chart-pie mr-3"></i> 70%</li>
+                                                            </ul>
+                                                            <button type="button"
+                                                                class="btn btn-rounded btn-success float-right mr-3">Success</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 02 -->
+                                    <div class="col-lg-6">
+                                        <div class="card mb-3">
+                                            <div class="row">
+
+                                                <div class="col-lg-5 col-5">
+                                                    <div class="thumbnail">
+                                                        <a href="profile-donation-detail.html"><img
+                                                                class="card-img-left"
+                                                                src="assets/img/donation/program-02.jpg"></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-7 col-7">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 p-3">
+                                                            <h5 class="display-5"><a
+                                                                    href="profile-donation-detail.html">Pembangunan
+                                                                    Masjid Al-Ikhlas</a> <span
+                                                                    class="badge badge-danger">Waqaf</span></h5>
+
+                                                            <ul class="list-group list-group-flush small pr-3">
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-map-marker-alt text-green mr-3"></i>
+                                                                    Bekasi</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-stopwatch text-blue mr-3"></i> 04
+                                                                    Oktober 2020</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-coins mr-3"></i> IDR. 200.000</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-chart-pie mr-3"></i> 70%</li>
+                                                            </ul>
+                                                            <button type="button"
+                                                                class="btn btn-rounded btn-warning float-right mr-3">Pending</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 03 -->
+                                    <div class="col-lg-6">
+                                        <div class="card mb-3">
+                                            <div class="row">
+
+                                                <div class="col-lg-5 col-5">
+                                                    <div class="thumbnail">
+                                                        <a href="profile-donation-detail.html"><img
+                                                                class="card-img-left"
+                                                                src="assets/img/donation/program-03.jpg"></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-7 col-7">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 p-3">
+                                                            <h5 class="display-5"><a
+                                                                    href="profile-donation-detail.html">Donasi Para
+                                                                    Hafidz Al-Qur'an 2020</a> <span
+                                                                    class="badge badge-danger">Waqaf</span></h5>
+
+                                                            <ul class="list-group list-group-flush small pr-3">
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-map-marker-alt text-green mr-3"></i>
+                                                                    Bekasi</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-stopwatch text-blue mr-3"></i> 04
+                                                                    Oktober 2020</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-coins mr-3"></i> IDR. 200.000</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-chart-pie mr-3"></i> 70%</li>
+                                                            </ul>
+                                                            <button type="button"
+                                                                class="btn btn-rounded btn-danger float-right mr-3">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 04 -->
+                                    <div class="col-lg-6">
+                                        <div class="card mb-3">
+                                            <div class="row">
+
+                                                <div class="col-lg-5 col-5">
+                                                    <div class="thumbnail">
+                                                        <a href="profile-donation-detail.html"><img
+                                                                class="card-img-left"
+                                                                src="assets/img/donation/program-02.jpg"></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-7 col-7">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 p-3">
+                                                            <h5 class="display-5"><a
+                                                                    href="profile-donation-detail.html">Pembangunan
+                                                                    Masjid Al-Huda</a> <span
+                                                                    class="badge badge-primary">Infaq</span></h5>
+
+                                                            <ul class="list-group list-group-flush small pr-3">
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-map-marker-alt text-green mr-3"></i>
+                                                                    Bekasi</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-stopwatch text-blue mr-3"></i> 04
+                                                                    Oktober 2020</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-coins mr-3"></i> IDR. 200.000</li>
+                                                                <li class="list-group-item"><i
+                                                                        class="fas fa-chart-pie mr-3"></i> 70%</li>
+                                                            </ul>
+                                                            <button type="button"
+                                                                class="btn btn-rounded btn-success float-right mr-3">Success</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-center my-4">
+                                    <nav class="col-lg-2" aria-label="">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <span class="page-link"><i class="fas fa-chevron-left"></i></span>
+                                            </li>
+
+                                            <li class="page-item active"><span class="page-link">1 <span
+                                                        class="sr-only">(current)</span></span></li>
+
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-donasi-rutin" role="tabpanel"
+                                aria-labelledby="nav-donasi-rutin-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <img src="assets/img/hero/Hero Donasi Rutin.png" class="img-fluid w-100">
+                                        <h5 class="text-dark mt-4 mb-3">Sekilas Donasi Rutin</h5>
+
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit
+                                            repellendus nisi alias autem praesentium nihil provident, laborum adipisci
+                                            deserunt enim dolorem sapiente? Pariatur nobis possimus excepturi.
+                                            Distinctio, in quis.</p>
+                                        <a class="btn btn-rounded btn-success" href="">Belum Daftar Donasi Rutin?</a>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+                                        <h5 class="text-dark mb-3">Tanggal Donasi Rutin Berikutnya</h5>
+                                        <div id="calendar">
+                                            <table class="table text-center">
+                                                <h6 class="mb-3"><i class="fas fa-calendar-alt mr-3"></i> November 2020</h6>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">S</th>
+                                                        <th scope="col">M</th>
+                                                        <th scope="col">T</th>
+                                                        <th scope="col">W</th>
+                                                        <th scope="col">T</th>
+                                                        <th scope="col">F</th>
+                                                        <th scope="col">S</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>02</td>
+                                                        <td>03</td>
+                                                        <td>04</td>
+                                                        <td>05</td>
+                                                        <td>06</td>
+                                                        <td>07</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08</td>
+                                                        <td>09</td>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td>12</td>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td class="bg-success text-white">25</td>
+                                                        <td>26</td>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td class="small">01</td>
+                                                        <td class="small">02</td>
+                                                        <td class="small">03</td>
+                                                        <td class="small">04</td>
+                                                        <td class="small">05</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INFO PROGRAM UTAMA PEDULI UMAT -->
+                    <div class="row">
+                        <div class="col-lg-6 px-4 mb-4 ">
+                            <h6><i class="fas fa-list-alt mr-2 mb-3"></i> Program Peduli Umat</h6>
+                            <div class="row info-panel">
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Zakat.png"></a>
+                                    <p class="text-center text-white mt-2">Zakat</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Infaq.png"></a>
+                                    <p class="text-center text-white mt-2">Infaq</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Waqaf.png"></a>
+                                    <p class="text-center text-white mt-2">Waqaf</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Orang Tua Asuh.png"></a>
+                                    <p class="text-center text-white mt-2">Adopsi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 px-4 mb-4 ">
+                            <h6><i class="fas fa-book-reader mr-2 mb-3"></i> Story Peduli Umat</h6>
+                            <div class="row info-panel">
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Tahsin.png"></a>
+                                    <p class="text-center text-white mt-2">Tahsin</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Tahfidz.png"></a>
+                                    <p class="text-center text-white mt-2">Tahfidz</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Murajaah.png"></a>
+                                    <p class="text-center text-white mt-2">Murajaah</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Bilmaz.png"></a>
+                                    <p class="text-center text-white mt-2">BILMAZ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END MAIN CONTENT -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Peduli Umat 2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!--END FOOTER -->
+
+            </div>
+            <!-- END CONTENT WRAPPER -->
+
+        </div>
+        <!-- END PAGE WRAPPER -->
+
+        <!-- SCROLL TO TOP BUTTON-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- LOGOUT MODAL-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Siap untuk keluar?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Pilih tombol "Logout" dibawah jika kamu ingin keluar dari sesi.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END -->
+        <!-- PEDULI UMAT JAVASCRIPT-->
+        <script src="assets/js/pu-user.js"></script>
+        <script src="assets/js/pu-js.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            </script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
