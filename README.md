@@ -1,6 +1,6 @@
 # Peduli-Umat
 
-Add Page
+Finish
 
 - Home
 - About Us
@@ -13,4 +13,7 @@ Add Page
 - Register Page
 - User Page (My Donation & Routine Donation)
 
+New
+- fix profile page
+- add donation routine while finish registration
 and more bugs on all page
