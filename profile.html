@@ -47,60 +47,43 @@
                 <div class="sidebar-brand-text mx-3">Peduli Umat</div>
             </a>
 
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="profile-details.html.html">
+                    <img class="img-profile mx-auto" src="assets/img/users/user-anas.png">
+                    <span>Anas Berkata</span>
+                </a>
+            </li> -->
+
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <hr class="sidebar-divider mb-0">
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-home"></i>
-                    <span>Home</span></a>
+                <a class="nav-link" href="index.html"><i class="fas fa-fw fa-home"></i> <span>Home</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Donation
-            </div>
-
             <!-- Nav Item - Donation -->
             <li class="nav-item active">
-                <a class="nav-link" href="profile.html">
-                    <i class="fas fa-fw fa-wallet"></i>
-                    <span>Donation</span></a>
+                <a class="nav-link" href="profile.html"><i class="fas fa-fw fa-wallet"></i> <span>Donation</span></a>
             </li>
 
             <!-- Nav Item - Adoption -->
             <li class="nav-item">
-                <a class="nav-link" href="profile.html">
-                    <i class="fas fa-fw fa-child"></i>
+                <a class="nav-link" href="profile-adoption.html"><i class="fas fa-fw fa-child"></i>
                     <span>Adoption</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Profile
-            </div>
-
             <!-- Nav Item - Personal Detail -->
             <li class="nav-item">
-                <a class="nav-link" href="profile-detail.html">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Personal Detail</span></a>
+                <a class="nav-link" href="profile-details.html"> <i class="fas fa-fw fa-user"></i> <span>Personal
+                        Detail</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Peduli Umat
-            </div>
 
             <!-- Nav Item - Donation -->
             <li class="nav-item">
@@ -125,9 +108,8 @@
 
             <!-- Nav Item - Term & Conditions -->
             <li class="nav-item mb-5">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span></a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal"><i
+                        class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
             </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
@@ -152,7 +134,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <div class="head-title pt-3 ml-4">
+                    <div class="head-title pt-3 ml-4 display-sm-none">
                         <h5>My Donation</h5>
                         <p class="small">Tuesday, 20/10/2020</p>
                     </div>
@@ -236,6 +218,33 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User-->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="assets/img/users/user-anas.png">
+                            </a>
+                            <!-- Dropdown - User -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile-details.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="profile-history.html">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -475,14 +484,16 @@
                                             repellendus nisi alias autem praesentium nihil provident, laborum adipisci
                                             deserunt enim dolorem sapiente? Pariatur nobis possimus excepturi.
                                             Distinctio, in quis.</p>
-                                        <a class="btn btn-rounded btn-success" href="">Belum Daftar Donasi Rutin?</a>
+                                        <a class="btn btn-rounded btn-success"
+                                            href="donation-routine-register.html">Belum Daftar Donasi Rutin?</a>
                                     </div>
 
                                     <div class="col-lg-6 mb-4">
                                         <h5 class="text-dark mb-3">Tanggal Donasi Rutin Berikutnya</h5>
                                         <div id="calendar">
                                             <table class="table text-center">
-                                                <h6 class="mb-3"><i class="fas fa-calendar-alt mr-3"></i> November 2020</h6>
+                                                <h6 class="mb-3"><i class="fas fa-calendar-alt mr-3"></i> November 2020
+                                                </h6>
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">S</th>
@@ -600,7 +611,7 @@
                 <!-- END MAIN CONTENT -->
 
                 <!-- Footer -->
-                <footer class="sticky-footer bg-white">
+                <footer class="sticky-footer bg-white mt-4">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <span>Copyright &copy; Peduli Umat 2020</span>
