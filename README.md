@@ -15,6 +15,6 @@ Finish
 - fix profile page
 - add donation routine while finish registration
 
-New
+New Update (08 November 2020)
 - Adopted Page and Profile Orphan Page
 - and more bugs on all page
