@@ -12839,6 +12839,29 @@ select.form-control {
   top: -20px;
 }
 
+.img-profile {
+  border-radius: 50px;
+  border: 3px solid #f8f9fc;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+label.upload-image {
+  position: absolute;
+  z-index: 1;
+  background-color: grey;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: 3px solid #f8f9fc;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+  bottom: -5px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
 @media (max-width: 700px) {
   #wrapper #content-wrapper {
     border-radius: 0;
@@ -12846,5 +12869,9 @@ select.form-control {
 
   .display-sm-none {
     display: none;
+  }
+
+  .sm-text-center {
+    text-align: center !important;
   }
 }
