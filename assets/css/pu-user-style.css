@@ -12660,6 +12660,22 @@ a {
   color: #57ba86;
 }
 
+.text-green {
+  color: #57ba86;
+}
+
+.text-orange {
+  color: #fcbd60;
+}
+
+.text-blue {
+  color: #2d9cdb;
+}
+
+.text-purple {
+  color: #bb6bd9;
+}
+
 .bg-green {
   background-color: #57ba86;
 }
@@ -12797,6 +12813,30 @@ select.form-control {
   background-color: #f0f5f9;
   border: 0;
   padding-left: 20px;
+}
+
+.campaign-header {
+  position: relative;
+  width: 100%;
+}
+
+.campaign-header img {
+  width: 100%;
+}
+
+.campaign-img-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.campaign-info-bottom {
+  position: relative;
+  top: -20px;
 }
 
 @media (max-width: 700px) {
