@@ -255,9 +255,8 @@
                 <div class="container-fluid p-5 bg-white">
 
                     <!-- Content Row Hero-->
-                    <div class="row my-3">
+                    <form class="row my-3" method="post" target="">
                         <!-- START FORM -->
-                        <form method="post" target=""></form>
                         <div class="col-lg-6 col-12 mb-3">
                             <h5>Daftar Donasi Rutin</h5>
 
@@ -286,17 +285,61 @@
                                 <input type="date" class="form-control" id="inputDate" aria-describedby="dateHelp"
                                     placeholder="Masukan Tanggal Pendebitan">
                             </div>
-                            <label class="ml-4 small" for="inputPayMethod">Metode Pembayaran</label>
-                            <div class="form-group mb-4">
-                                <select class="form-control custom-select" id="inputPayMethod">
-                                    <option>Metode Pembayaran</option>
-                                    <option>Dana</option>
-                                    <option>Ovo</option>
-                                    <option>BNI Banking</option>
-                                    <option>BCA Banking</option>
-                                </select>
+
+                            <div class="card w-100 mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Metode Pembayaran</h5>
+                                    <p class="card-text small">Pilih metode pembayaran di bawah ini.</p>
+
+                                    <h5 class="mt-4 pl-4">Pembayaran Cepat E-Wallet</h5>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputDana">
+                                            <img src="assets/img/icons/logo dana.png" class="mr-3"> DANA
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="dana"
+                                            id="inputDana" value="dana" checked>
+                                    </div>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputOvo">
+                                            <img src="assets/img/icons/logo ovo.png" class="mr-3"> OVO
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="ovo"
+                                            id="inputOvo" value="ovo">
+                                    </div>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputGopay">
+                                            <img src="assets/img/icons/logo gopay.png" class="mr-3"> GO - Pay
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="gopay"
+                                            id="inputGopay" value="gopay">
+                                    </div>
+
+                                    <h5 class="mt-4 pl-4">Virtual Account</h5>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputBCA">
+                                            <img src="assets/img/icons/logo BCA.png" class="mr-3"> BCA Virtual Banking
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="bca"
+                                            id="inputBCA" value="bca">
+                                    </div>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputBNI">
+                                            <img src="assets/img/icons/logo BNI.png" class="mr-3"> BNI Virtual Banking
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="bnie"
+                                            id="inputBNI" value="bni">
+                                    </div>
+                                    <div class="form-check pt-3 mb-3">
+                                        <label class="form-check-label" for="inputMandiri">
+                                            <img src="assets/img/icons/logo Mandiri.png" class="mr-3"> Mandiri Virtual Banking
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="mandiri"
+                                            id="inputMandiri" value="mandiri">
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6 col-12 mb-3">
                             <h5>Pilih Tujuan Penyaluran Donasi</h5>
 
@@ -313,7 +356,9 @@
                                     <p class="card-text small">Memberikan beasiswa anak kurang mampu, pembangunan
                                         infrastruktur & fasilitas pendidikan</p>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="currency-field01" id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Rp.">
+                                        <input type="text" class="form-control" name="currency-field01"
+                                            id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value=""
+                                            data-type="currency" placeholder="Rp.">
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +369,9 @@
                                     <p class="card-text small">Memberikan beasiswa anak kurang mampu, pembangunan
                                         infrastruktur & fasilitas pendidikan</p>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="currency-field02" id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Rp.">
+                                        <input type="text" class="form-control" name="currency-field02"
+                                            id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value=""
+                                            data-type="currency" placeholder="Rp.">
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +382,9 @@
                                     <p class="card-text small">Memberikan beasiswa anak kurang mampu, pembangunan
                                         infrastruktur & fasilitas pendidikan</p>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="currency-field03" id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Rp.">
+                                        <input type="text" class="form-control" name="currency-field03"
+                                            id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value=""
+                                            data-type="currency" placeholder="Rp.">
                                     </div>
                                 </div>
                             </div>
@@ -347,9 +396,8 @@
 
                             <button type="submit" class="btn btn-rounded btn-success ml-4">Simpan & Lanjutkan</button>
                         </div>
-                        </form>
                         <!-- END FORM -->
-                    </div>
+                    </form>
 
                 </div>
                 <!-- END MAIN CONTENT -->
@@ -389,7 +437,7 @@
                     <div class="modal-body">Pilih tombol "Logout" dibawah jika kamu ingin keluar dari sesi.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                        <a class="btn btn-success" href="login.html">Logout</a>
                     </div>
                 </div>
             </div>

@@ -15,8 +15,9 @@ Finish
 - Fix profile page
 - Add donation routine while finish registration
 - Adopted Page and Profile Orphan Page
-
-New Update (09 November 2020)
 - Add profile edit page
 - Add edit password page
+
+New Update (10 November 2020)
+- Add payment, payment success and payment failed page
 - and more bugs on all page

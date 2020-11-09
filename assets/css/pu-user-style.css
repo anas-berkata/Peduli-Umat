@@ -2345,12 +2345,16 @@ textarea.form-control {
   position: relative;
   display: block;
   padding-left: 1.25rem;
+  background-color: #f0f5f9;
+  border-radius: 40px;
+  height: 50px;
 }
 
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
   margin-left: -1.25rem;
+  right: 30px;
 }
 
 .form-check-input[disabled] ~ .form-check-label,
@@ -12862,6 +12866,80 @@ label.upload-image {
   border-radius: 50px;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+}
+.switch-input {
+  display: none;
+}
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 2px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  user-select: none;
+}
+.switch-label::before,
+.switch-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.switch-label::before {
+  width: 90%;
+  height: 100%;
+  background-color: #dedede;
+  border-radius: 9999em;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  margin-top: 5px;
+}
+.switch-label::after {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+  -webkit-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+}
+.switch-input:checked + .switch-label::before {
+  background-color: #89c12d;
+}
+.switch-input:checked + .switch-label::after {
+  left: 24px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+input:checked ~ .icon-box {
+  background-color: #57ba86;
+  color: #fff;
+}
+
+.icon-box {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #57ba86;
+  margin-bottom: 20px;
+}
+
+/* MOBILE */
 @media (max-width: 700px) {
   #wrapper #content-wrapper {
     border-radius: 0;
@@ -12873,5 +12951,10 @@ label.upload-image {
 
   .sm-text-center {
     text-align: center !important;
+  }
+
+  .icon-box {
+    width: 100px;
+    height: 100px;
   }
 }
