@@ -17,7 +17,11 @@ Finish
 - Adopted Page and Profile Orphan Page
 - Add profile edit page
 - Add edit password page
+- Add payment, payment success and payment failed page
 
 New Update (10 November 2020)
-- Add payment, payment success and payment failed page
+- Add zakat page and more fitur payment page
 - and more bugs on all page
+
+Not done yet
+- Peduli Umat Profile for user view, help page and term & condition page
