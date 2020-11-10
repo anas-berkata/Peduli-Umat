@@ -18,10 +18,10 @@ Finish
 - Add profile edit page
 - Add edit password page
 - Add payment, payment success and payment failed page
+- Add zakat page and more fitur payment page
 
 New Update (10 November 2020)
-- Add zakat page and more fitur payment page
+- Peduli Umat Profile for user view, help page and term & condition page
 - and more bugs on all page
 
-Not done yet
-- Peduli Umat Profile for user view, help page and term & condition page
+Finish, maybe i can fix some bugs for layout and others

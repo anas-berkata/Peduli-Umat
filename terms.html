@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLE -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Peduli Umat Style -->
+    <link rel="stylesheet" href="assets/css/pu-user-style.css">
+
+    <!-- FONTS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <!-- Font online : Lato / Poppins Font Google Online-->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"> -->
+
+    <!-- Font offline : Lato / Poppins font web / @font-face -->
+    <link rel="stylesheet" href="assets/font/poppins/style.css">
+    <link rel="stylesheet" href="assets/font/lato/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/logos/Favicon.png">
+
+    <!-- JQUERY LIBRARY ONLY <HEAD> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <title>Peduli Umat</title>
+</head>
+
+
+<body id="page-top">
+
+    <!-- PAGE WRAPPER-->
+    <div id="wrapper">
+
+        <!-- SIDEBAR NAVIGATION -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="assets/img/logos/Logo Only.png">
+                </div>
+                <div class="sidebar-brand-text mx-3">Peduli Umat</div>
+            </a>
+
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="profile-details.html.html">
+                    <img class="img-profile mx-auto" src="assets/img/users/user-anas.png">
+                    <span>Anas Berkata</span>
+                </a>
+            </li> -->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider mb-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-fw fa-home"></i> <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Donation -->
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html"><i class="fas fa-fw fa-wallet"></i> <span>Donation</span></a>
+            </li>
+
+            <!-- Nav Item - Adoption -->
+            <li class="nav-item">
+                <a class="nav-link" href="adoption.html"><i class="fas fa-fw fa-child"></i>
+                    <span>Adoption</span></a>
+            </li>
+
+            <!-- Nav Item - Personal Detail -->
+            <li class="nav-item">
+                <a class="nav-link" href="profile-details.html"> <i class="fas fa-fw fa-user"></i> <span>Personal
+                        Detail</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Donation -->
+            <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeduliUmat"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw"><img class="img-tr" src="assets/img/icons/Icon Peduli Umat sm.png"></i>
+                    <span>Peduli Umat</span>
+                </a>
+                <div id="collapsePeduliUmat" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Peduli Umat Menu:</h6>
+                        <a class="collapse-item" href="about-peduli-umat.html">Peduli Umat</a>
+                        <a class="collapse-item" href="helps.html">Helps</a>
+                        <a class="collapse-item" href="terms.html">Term & Conditions</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Nav Item - Term & Conditions -->
+            <li class="nav-item mb-5">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal"><i
+                        class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- END SIDEBAR NAVIGATION -->
+
+        <!-- CONTENT WRAPPER -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 pt-3 static-top">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3 ml-4">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="head-title pt-3 ml-4 display-sm-none">
+                        <h5>Term & Condition</h5>
+                        <p class="small">Tuesday, 20/10/2020</p>
+                    </div>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+
+                            <!-- Search -->
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-search animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Temukan Donasi, Mitra dan Lainnya" aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Notification -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notification Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>
+                                        <span class="font-weight-bold">Donasi sebesar IDR. 200.000 untuk program
+                                            pembangunan Masjid Jami Al-Ikhlas berhasil!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>Donasi sebesar IDR.
+                                        1.000.000 untuk biaya pendidikan Muhammad Adam Nuh Berhasil!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Oktober 20, 2020</div>Donasi sebesar IDR.
+                                        250.000 untuk biaya pembangunan pondok pasantren al-ikhlas
+                                        pending!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User-->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="assets/img/users/Anas.JPG">
+                            </a>
+                            <!-- Dropdown - User -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in py-2"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile-details.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="profile-history.html">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid p-5 bg-white">
+
+                    <!-- Content Row Hero-->
+                    <div class="row my-3">
+                        <!-- START FORM -->
+                        <div class="col-lg-6 col-12 mb-3">
+                            <h5>Term</h5>
+
+                            <hr class="my-4">
+
+                            <img src="assets/img/hero/Term & Condition.png" width="50%" alt="Term & Condition" />
+
+                            <h5 class="mt-4">Condition of Use</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                necessitatibus harum repudiandae temporibus praesentium
+                                consectetur, neque, ea, nam placeat sunt esse ab. Voluptatibus
+                                quisquam, eligendi quidem voluptates voluptatem vitae aspernatur
+                                iure, deleniti dicta rerum nisi ad neque nostrum dignissimos. Nam
+                                cupiditate rerum aperiam voluptatum consequuntur delectus
+                                doloremque, debitis dolorem necessitatibus dignissimos, totam
+                                nobis adipisci quas! Aspernatur cupiditate ad odio dolorem facere
+                                dolorum, ipsa rem, consequuntur neque explicabo quidem, iusto
+                                accusamus.
+                            </p>
+
+                            <h5>Privacy</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                necessitatibus harum repudiandae temporibus praesentium
+                                consectetur, neque, ea, nam placeat sunt esse ab. Voluptatibus
+                                quisquam, eligendi quidem voluptates voluptatem vitae aspernatur
+                                iure, deleniti dicta rerum nisi ad neque nostrum dignissimos.
+                            </p>
+
+
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-3">
+                            <h5>Condition</h5>
+
+                            <hr class="my-4">
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                necessitatibus harum repudiandae temporibus praesentium
+                                consectetur, neque, ea, nam placeat sunt esse ab. Voluptatibus
+                                quisquam, eligendi quidem voluptates voluptatem vitae aspernatur
+                                iure, deleniti dicta rerum nisi ad neque nostrum dignissimos. Nam
+                                cupiditate rerum aperiam voluptatum consequuntur delectus
+                                doloremque, debitis dolorem necessitatibus dignissimos, totam
+                                nobis adipisci quas! Aspernatur cupiditate ad odio dolorem facere
+                                dolorum, ipsa rem, consequuntur neque explicabo quidem, iusto
+                                accusamus? Nesciunt vitae dolore consequuntur error id omnis
+                                aperiam, ratione vero accusamus minus nulla inventore aliquid
+                                ipsum, accusantium impedit ab unde alias ipsa veniam nam aliquam?
+                                Ducimus aliquam dolor voluptatibus error quidem corrupti minus.
+                            </p>
+
+                            <h5>Electronic Communication</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                necessitatibus harum repudiandae temporibus praesentium
+                                consectetur, neque, ea, nam placeat sunt esse ab. Voluptatibus
+                                quisquam, eligendi quidem voluptates voluptatem vitae aspernatur
+                                iure, deleniti dicta rerum nisi ad neque nostrum dignissimos. Nam
+                                cupiditate rerum aperiam voluptatum consequuntur delectus
+                                doloremque, debitis dolorem necessitatibus dignissimos, totam
+                                nobis adipisci quas! Aspernatur cupiditate ad odio dolorem facere
+                                dolorum, ipsa rem, consequuntur neque explicabo quidem, iusto
+                                accusamus? Nesciunt vitae dolore consequuntur error id omnis
+                                aperiam, ratione vero accusamus minus nulla inventore aliquid
+                                ipsum, accusantium impedit ab unde alias ipsa veniam nam aliquam?
+                                Ducimus aliquam dolor voluptatibus error quidem corrupti minus.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- END MAIN CONTENT -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white mt-4">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Peduli Umat 2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!--END FOOTER -->
+
+            </div>
+            <!-- END CONTENT WRAPPER -->
+
+        </div>
+        <!-- END PAGE WRAPPER -->
+
+        <!-- SCROLL TO TOP BUTTON-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- LOGOUT MODAL-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Siap untuk keluar?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Pilih tombol "Logout" dibawah jika kamu ingin keluar dari sesi.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-success" href="login.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END -->
+        <!-- PEDULI UMAT JAVASCRIPT-->
+        <script src="assets/js/pu-user.js"></script>
+        <script src="assets/js/pu-js.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            </script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
