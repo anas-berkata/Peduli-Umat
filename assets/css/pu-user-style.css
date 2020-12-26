@@ -12775,6 +12775,17 @@ a {
   border-radius: 50px;
 }
 
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
 input.form-control,
 textarea.form-control {
   border-radius: 50px;
@@ -12794,8 +12805,8 @@ textarea.form-control {
 .input-group-append {
   position: absolute;
   background-color: transparent;
-  padding-top: 2px;
-  right: 0;
+  padding-top: 3px;
+  right: 3px;
 }
 
 .input-group-append .input-group-text {
@@ -12957,4 +12968,112 @@ input:checked ~ .icon-box {
     width: 100px;
     height: 100px;
   }
+}
+
+.select-custom {
+  position: relative;
+}
+
+.select-custom select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #f0f5f9;
+  border-radius: 50px;
+  border: 0px;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 13px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #222 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #222 transparent;
+  top: 10px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 0px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #f0f5f9;
+  border-radius: 25px;
+  top: 105%;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+/* UPLOAD IMAGES */
+
+.form-image {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f5f9;
+  border-radius: 50px;
+}
+#upload {
+  opacity: 0;
+}
+
+#upload-label {
+  position: absolute;
+  top: 50%;
+  /* left: 1rem; */
+  transform: translateY(-50%);
+}
+
+.image-area {
+  border: 2px dashed rgba(0, 0, 0, 0.915);
+  padding: 1rem;
+  position: relative;
+}
+
+.image-area::before {
+  content: "Uploaded image result";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.image-area img {
+  z-index: 2;
+  position: relative;
 }

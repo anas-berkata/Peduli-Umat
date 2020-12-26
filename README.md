@@ -7,3 +7,10 @@ Revision
 - Edit Zakat Page (Devide Zakat and Zakat Maal Page)
 - Add Table Page with full Data Table Fitur
 - Add Dashboard Admin Page
+
+Update Revision
+- Card Resize Smallest
+- Select
+- Add form page for references
+- Payment Page Edit
+- Image Upload Preview in Form Page

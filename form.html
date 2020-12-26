@@ -169,7 +169,7 @@
                     </button>
 
                     <div class="head-title pt-3 ml-4 display-sm-none">
-                        <h5>Payment</h5>
+                        <h5>Form</h5>
                         <p class="small">Tuesday, 20/10/2020</p>
                     </div>
 
@@ -292,65 +292,49 @@
                     <form class="row my-3" method="post" target="">
                         <!-- START FORM -->
                         <div class="col-lg-6 col-12 mb-3">
-                            <h5>Info Donation</h5>
+                            <h5>Form Layout</h5>
 
                             <hr class="my-4">
 
                             <div class="card w-100 mb-4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Donation Information</h5>
+                                    <h5>Standar Input</h5>
                                     <div class="form-group">
-                                        <label class="card-text small" for="name">Nama Lengkap*</label>
-                                        <input type="text" class="form-control" name="" id="name"
-                                            placeholder="Nama Lengkap">
+                                        <input type="text" class="form-control" name="" value=""
+                                            placeholder="Placeholder Here type text">
                                     </div>
                                     <div class="form-group">
-                                        <label class="card-text small" for="email">Email*</label>
-                                        <input type="email" class="form-control" name="" id="email"
-                                            placeholder="E-Mail">
+                                        <input type="number" class="form-control" name="" value=""
+                                            placeholder="Placeholder Here type number">
                                     </div>
                                     <div class="form-group">
-                                        <label class="card-text small" for="phone">Nomor Handphone*</label>
-                                        <input type="number" class="form-control" name="" id="phone"
-                                            placeholder="Nomor Handphone">
+                                        <input type="password" class="form-control" name="" value=""
+                                            placeholder="Placeholder Here type password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="" value=""
+                                            placeholder="Placeholder Here type E-Mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" name="" value=""
+                                            placeholder="Placeholder Here type date">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control my-2" id="message" rows="3"
+                                            placeholder="Text Area"></textarea>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-3">
+                            <h5>Advanced</h5>
+
+                            <hr class="my-4">
 
                             <div class="card w-100 mb-4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Nominal Donation</h5>
-                                    <p class="card-text small">Pilih besaran nominal yang tersedia di bawah
-                                        ini.</p>
-                                    <div class="form-group select-custom">
-                                        <select class="form-control" id="nominalDonation">
-                                            <option>Pilih Nominal</option>
-                                            <option>IDR. 10.000</option>
-                                            <option>IDR. 25.000</option>
-                                            <option>IDR. 50.000</option>
-                                            <option>IDR. 100.000</option>
-                                            <option>IDR. 250.000</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Other Nominal Donation</h5>
-                                    <p class="card-text small">Masukan nilai nominal donasi lainnya</p>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="" id="otherNominal"
-                                            pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
-                                            placeholder="Rp.">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card w-100 mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title">Payment Method</h5>
-                                    <p class="card-text small">Pilih metode pembayaran di bawah ini.</p>
-
-                                    <h5 class="mt-4 pl-4">Pembayaran Cepat E-Wallet</h5>
+                                    <h5>Radio</h5>
                                     <div class="form-check pt-3 mb-3">
                                         <label class="form-check-label" for="inputDana">
                                             <img src="assets/img/icons/logo dana.png" class="mr-3"> DANA
@@ -372,92 +356,52 @@
                                         <input class="form-check-input" type="radio" name="gopay" id="inputGopay"
                                             value="gopay">
                                     </div>
+                                </div>
+                            </div>
 
-                                    <h5 class="mt-4 pl-4">Virtual Account</h5>
-                                    <div class="form-check pt-3 mb-3">
-                                        <label class="form-check-label" for="inputBCA">
-                                            <img src="assets/img/icons/logo BCA.png" class="mr-3"> BCA Virtual Banking
-                                        </label>
-                                        <input class="form-check-input" type="radio" name="bca" id="inputBCA"
-                                            value="bca">
-                                    </div>
-                                    <div class="form-check pt-3 mb-3">
-                                        <label class="form-check-label" for="inputBNI">
-                                            <img src="assets/img/icons/logo BNI.png" class="mr-3"> BNI Virtual Banking
-                                        </label>
-                                        <input class="form-check-input" type="radio" name="bnie" id="inputBNI"
-                                            value="bni">
-                                    </div>
-                                    <div class="form-check pt-3 mb-3">
-                                        <label class="form-check-label" for="inputMandiri">
-                                            <img src="assets/img/icons/logo Mandiri.png" class="mr-3"> Mandiri Virtual
-                                            Banking
-                                        </label>
-                                        <input class="form-check-input" type="radio" name="mandiri" id="inputMandiri"
-                                            value="mandiri">
+                            <div class="card w-100 mb-4">
+                                <div class="card-body">
+                                    <h5>Select Option</h5>
+                                    <div class="form-group select-custom">
+                                        <select class="form-control" id="nominalDonation">
+                                            <option>Choice</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-6 col-12 mb-3">
-                            <h5>Detail Your Donation</h5>
-
-                            <hr class="my-4">
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h5>Program Panti Tuna Netra Cerdas</h5>
-                                    <p class="small"><i class="fas fa-map-marker-alt text-orange mr-3"></i> Banjarmasin
-                                    </p>
-                                </li>
-                                <li class="list-group-item">
-                                    <p class="small mb-0">ID Donation</p>
-                                    <h6>#2109320192</h6>
-                                </li>
-                                <li class="list-group-item">
-                                    <p class="small mb-0">Payment Method</p>
-                                    <h6>GOPAY</h6>
-                                </li>
-                                <li class="list-group-item">
-                                    <p class="small mb-0">Date</p>
-                                    <h6>08 Oktober 2020</h6>
-                                </li>
-                                <li class="list-group-item">
-                                    <p class="small mb-0">Categories</p>
-                                    <h6>Infaq</h6>
-                                </li>
-                                <li class="list-group-item">
-                                    <p class="small mb-0">Kirim Do'a atau Ucapan :</p>
-                                    <textarea class="form-control my-2" id="message" rows="3"
-                                        placeholder="Pesan Anda"></textarea>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-lg-10 col-10 small">
-                                            <p class="text-black float-left">Sembunyikan nama saya (Donasi Anonim)</p>
-                                            <p class="text-black float-left">Tulis doa dan dukungan (Opsional)</p>
-                                        </div>
-                                        <div class="col-lg-2 col-2">
-                                            <div class="switch float-right mb-4">
-                                                <input id="switch-1" type="checkbox" class="switch-input" />
-                                                <label for="switch-1" class="switch-label">Switch</label>
-                                            </div>
-                                            <div class="switch float-right">
-                                                <input id="switch-2" type="checkbox" class="switch-input" />
-                                                <label for="switch-2" class="switch-label">Switch</label>
-                                            </div>
+                            <div class="card w-100 mb-4">
+                                <div class="card-body">
+                                    <h5>Upload Images</h5>
+                                    <div class="input-group mb-3">
+                                        <input id="uploadImage" type="file" onchange="readURL(this);"
+                                            class="form-control d-none">
+                                        <label id="upload-label" for="uploadImage"
+                                            class="font-weight-light text-muted form-image">Choose file</label>
+                                        <div class="input-group-append">
+                                            <label for="uploadImage" class="btn btn-light m-0 rounded-pill px-4"> <i
+                                                    class="fa fa-cloud-upload mr-2 text-muted"></i><small
+                                                    class="text-uppercase text-muted">Choose
+                                                    file</small></label>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
 
-                            <div class="form-group mb-4 px-4">
-                                <p class="small">Biaya Admin Bank <span class="float-right">Rp. 2.500</span></p>
-                                <h6>Total Pendebitan <span class="float-right">Rp.0</span></h6>
+                                    <!-- Uploaded image area-->
+                                    <p class="font-italic text-center mt-5 pt-3 small">The image uploaded will be
+                                        rendered
+                                        inside the box below.</p>
+                                    <div class="image-area mt-4"><img id="imageResult" src="#" alt=""
+                                            class="img-fluid rounded shadow-sm mx-auto d-block">
+                                    </div>
+                                </div>
                             </div>
 
-                            <button type="submit" class="btn btn-rounded btn-success ml-4">Lanjut Pembayaran</button>
+                            <button type="submit" class="btn btn-rounded btn-success ml-4">Button</button>
                         </div>
                         <!-- END FORM -->
                     </form>
