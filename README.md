@@ -14,3 +14,4 @@ Update Revision
 - Add form page for references
 - Payment Page Edit
 - Image Upload Preview in Form Page
+- Add Dafault Image (Photo Profile, Campaign, Stories and Icon)
