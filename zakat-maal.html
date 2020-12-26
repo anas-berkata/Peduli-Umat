@@ -292,75 +292,49 @@
                     <div class="row my-3 justify-content-center">
                         <!-- START FORM -->
                         <div class="col-lg-6 col-12 mb-3">
-                            <h5>Zakat Penghasilan</h5>
+                            <h5>Zakat Maal</h5>
 
                             <hr class="my-4">
 
-                            <div class="row p-3">
-                                <nav class="col-lg-12">
-                                    <!-- Tab Nav -->
-                                    <div class="nav nav-tabs row mt-0" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-donasi-saya-tab" data-toggle="tab"
-                                            href="#nav-donasi-saya" role="tab" aria-controls="nav-home"
-                                            aria-selected="true">Bruto</a>
-                                        <a class="nav-item nav-link" id="nav-donasi-rutin-tab" data-toggle="tab"
-                                            href="#nav-donasi-rutin" role="tab" aria-controls="nav-profile"
-                                            aria-selected="false">Netto</a>
-                                    </div>
-                                </nav>
-
-                                <!-- Tab Content -->
-                                <div class="tab-content col-lg-12 p-3" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-donasi-saya" role="tabpanel"
-                                        aria-labelledby="nav-donasi-saya-tab">
-                                        <form action="" method="post">
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputName">Pendapatan Perbulan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Pendapatan Tambahan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-
-                                            <a class="btn btn-success btn-rounded" href="#" data-toggle="modal"
-                                                data-target="#zakatBrutoModal">Hitung Jumlah Zakat</a>
-                                        </form>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="nav-donasi-rutin" role="tabpanel"
-                                        aria-labelledby="nav-donasi-rutin-tab">
-                                        <form action="" method="post">
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputName">Pendapatan Perbulan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Pendapatan Tambahan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Hutang / Cicilan dan
-                                                    lainnya</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-
-                                            <a class="btn btn-success btn-rounded" href="#" data-toggle="modal"
-                                                data-target="#zakatNettoModal">Hitung Jumlah Zakat</a>
-                                        </form>
-                                    </div>
+                            <form action="" method="post">
+                                <div class="form-group mb-4">
+                                    <label class="ml-4 small" for="inputName">Nilai Deposito / Tabungan / Giro</label>
+                                    <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                        pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                        placeholder="Rp.">
                                 </div>
-                            </div>
+                                <div class="form-group mb-4">
+                                    <label class="ml-4 small" for="inputPhone">Emas, Perak, Permata atau
+                                        sejenisnya</label>
+                                    <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                        pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                        placeholder="Rp.">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="ml-4 small" for="inputPhone">Nilai Properti & kendaraan</label>
+                                    <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                        pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                        placeholder="Rp.">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="ml-4 small" for="inputEmail">Lainnya</label>
+                                    <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                        pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                        placeholder="Rp.">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="ml-4 small" for="inputEmail">Hutang pribadi jatuh tempo tahun
+                                        ini</label>
+                                    <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                        pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                        placeholder="Rp.">
+                                </div>
+
+                                <a class="btn btn-success btn-rounded" href="#" data-toggle="modal"
+                                    data-target="#zakatMaalModal">Hitung Jumlah Zakat</a>
+                            </form>
+
+
                         </div>
 
                     </div>
@@ -385,44 +359,18 @@
         <!-- END PAGE WRAPPER -->
 
         <!-- ZAKAT MODAL -->
-        <div class="modal fade" id="zakatBrutoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="zakatMaalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Penghasilan Anda</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Maal Anda</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Jumlah zakat anda setelah perhitungan bruto penghasilan adalah</p>
-                        <h5 class="my-3">Rp. 250.000</h5>
-
-                        <p>Niat Zakat:</p>
-                        <h5>ﻧَﻮَﻳْﺖُ أَﻥْ أُﺧْﺮِﺝَ ﺯَﻛَﺎﺓَ ﺍﻟْﻔِﻄْﺮِ ﻋَﻦْ ﻧَﻔْسيْ ﻓَﺮْﺿًﺎ ﻟﻠﻪِ ﺗَﻌَﺎﻟَﻰ</h5>
-                        <p>"Nawaytu an ukhrija zakaata al-fitri ‘an nafsi fardhan lillahi ta’ala"</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hitung Lagi</button>
-                        <a class="btn btn-success" href="payment.html">Lanjut Pembayaran</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="zakatNettoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Penghasilan Anda</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Jumlah zakat anda setelah perhitungan netto penghasilan adalah</p>
+                        <p>Jumlah zakat anda setelah perhitungan harta adalah</p>
                         <h5 class="my-3">Rp. 250.000</h5>
 
                         <p>Niat Zakat:</p>

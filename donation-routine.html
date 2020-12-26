@@ -169,7 +169,7 @@
                     </button>
 
                     <div class="head-title pt-3 ml-4 display-sm-none">
-                        <h5>Zakat</h5>
+                        <h5>Donation Routine</h5>
                         <p class="small">Tuesday, 20/10/2020</p>
                     </div>
 
@@ -184,7 +184,7 @@
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
 
-                            <!-- Search -->
+                            <!-- Dropdown - Search -->
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-search animated--grow-in"
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto navbar-search">
@@ -287,82 +287,142 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid p-5 bg-white">
+                    <!-- Content Row Donation -->
+                    <div class="row my-5">
+                        <div class="col-12">
+                            <h5><i class="fas fa-clock mr-2"></i> Donation Routine</h5>
 
-                    <!-- Content Row Hero-->
-                    <div class="row my-3 justify-content-center">
-                        <!-- START FORM -->
-                        <div class="col-lg-6 col-12 mb-3">
-                            <h5>Zakat Penghasilan</h5>
+                            <hr class="hr">
 
-                            <hr class="my-4">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <img src="assets/img/hero/Hero Donasi Rutin.png" class="img-fluid w-100">
+                                    <h5 class="text-dark mt-4 mb-3">Sekilas Donasi Rutin</h5>
 
-                            <div class="row p-3">
-                                <nav class="col-lg-12">
-                                    <!-- Tab Nav -->
-                                    <div class="nav nav-tabs row mt-0" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-donasi-saya-tab" data-toggle="tab"
-                                            href="#nav-donasi-saya" role="tab" aria-controls="nav-home"
-                                            aria-selected="true">Bruto</a>
-                                        <a class="nav-item nav-link" id="nav-donasi-rutin-tab" data-toggle="tab"
-                                            href="#nav-donasi-rutin" role="tab" aria-controls="nav-profile"
-                                            aria-selected="false">Netto</a>
-                                    </div>
-                                </nav>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit
+                                        repellendus nisi alias autem praesentium nihil provident, laborum adipisci
+                                        deserunt enim dolorem sapiente? Pariatur nobis possimus excepturi.
+                                        Distinctio, in quis.</p>
+                                    <a class="btn btn-rounded btn-success" href="donation-routine-register.html">Belum
+                                        Daftar Donasi Rutin?</a>
+                                </div>
 
-                                <!-- Tab Content -->
-                                <div class="tab-content col-lg-12 p-3" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-donasi-saya" role="tabpanel"
-                                        aria-labelledby="nav-donasi-saya-tab">
-                                        <form action="" method="post">
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputName">Pendapatan Perbulan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Pendapatan Tambahan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-
-                                            <a class="btn btn-success btn-rounded" href="#" data-toggle="modal"
-                                                data-target="#zakatBrutoModal">Hitung Jumlah Zakat</a>
-                                        </form>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="nav-donasi-rutin" role="tabpanel"
-                                        aria-labelledby="nav-donasi-rutin-tab">
-                                        <form action="" method="post">
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputName">Pendapatan Perbulan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Pendapatan Tambahan</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="ml-4 small" for="inputPhone">Hutang / Cicilan dan
-                                                    lainnya</label>
-                                                <input type="text" class="form-control" name="currency-field03"
-                                                    id="currency-field" pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$"
-                                                    value="" data-type="currency" placeholder="Rp.">
-                                            </div>
-
-                                            <a class="btn btn-success btn-rounded" href="#" data-toggle="modal"
-                                                data-target="#zakatNettoModal">Hitung Jumlah Zakat</a>
-                                        </form>
+                                <div class="col-lg-6 mb-4">
+                                    <h5 class="text-dark mb-3">Tanggal Donasi Rutin Berikutnya</h5>
+                                    <div id="calendar">
+                                        <table class="table text-center">
+                                            <h6 class="mb-3"><i class="fas fa-calendar-alt mr-3"></i> November 2020
+                                            </h6>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">S</th>
+                                                    <th scope="col">M</th>
+                                                    <th scope="col">T</th>
+                                                    <th scope="col">W</th>
+                                                    <th scope="col">T</th>
+                                                    <th scope="col">F</th>
+                                                    <th scope="col">S</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01</td>
+                                                    <td>02</td>
+                                                    <td>03</td>
+                                                    <td>04</td>
+                                                    <td>05</td>
+                                                    <td>06</td>
+                                                    <td>07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>08</td>
+                                                    <td>09</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td class="bg-success text-white">25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td class="small">01</td>
+                                                    <td class="small">02</td>
+                                                    <td class="small">03</td>
+                                                    <td class="small">04</td>
+                                                    <td class="small">05</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- INFO PROGRAM UTAMA PEDULI UMAT -->
+                    <div class="row">
+                        <div class="col-lg-6 px-4 mb-4 ">
+                            <h5><i class="fas fa-list-alt mr-2 mb-3"></i> Program Peduli Umat</h5>
+                            <div class="row info-panel">
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Zakat.png"></a>
+                                    <p class="text-center text-white mt-2">Zakat</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Infaq.png"></a>
+                                    <p class="text-center text-white mt-2">Infaq</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Waqaf.png"></a>
+                                    <p class="text-center text-white mt-2">Waqaf</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Orang Tua Asuh.png"></a>
+                                    <p class="text-center text-white mt-2">Adopsi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 px-4 mb-4 ">
+                            <h5><i class="fas fa-book-reader mr-2 mb-3"></i> Story Peduli Umat</h5>
+                            <div class="row info-panel">
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Tahsin.png"></a>
+                                    <p class="text-center text-white mt-2">Tahsin</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Tahfidz.png"></a>
+                                    <p class="text-center text-white mt-2">Tahfidz</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Murajaah.png"></a>
+                                    <p class="text-center text-white mt-2">Murajaah</p>
+                                </div>
+                                <div class="col-lg-3 col-6 mb-2 text-center">
+                                    <a href="#"><img src="assets/img/icons/Icon Program Bilmaz.png"></a>
+                                    <p class="text-center text-white mt-2">BILMAZ</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -383,59 +443,6 @@
 
         </div>
         <!-- END PAGE WRAPPER -->
-
-        <!-- ZAKAT MODAL -->
-        <div class="modal fade" id="zakatBrutoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Penghasilan Anda</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Jumlah zakat anda setelah perhitungan bruto penghasilan adalah</p>
-                        <h5 class="my-3">Rp. 250.000</h5>
-
-                        <p>Niat Zakat:</p>
-                        <h5>ﻧَﻮَﻳْﺖُ أَﻥْ أُﺧْﺮِﺝَ ﺯَﻛَﺎﺓَ ﺍﻟْﻔِﻄْﺮِ ﻋَﻦْ ﻧَﻔْسيْ ﻓَﺮْﺿًﺎ ﻟﻠﻪِ ﺗَﻌَﺎﻟَﻰ</h5>
-                        <p>"Nawaytu an ukhrija zakaata al-fitri ‘an nafsi fardhan lillahi ta’ala"</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hitung Lagi</button>
-                        <a class="btn btn-success" href="payment.html">Lanjut Pembayaran</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="zakatNettoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Penghasilan Anda</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Jumlah zakat anda setelah perhitungan netto penghasilan adalah</p>
-                        <h5 class="my-3">Rp. 250.000</h5>
-
-                        <p>Niat Zakat:</p>
-                        <h5>ﻧَﻮَﻳْﺖُ أَﻥْ أُﺧْﺮِﺝَ ﺯَﻛَﺎﺓَ ﺍﻟْﻔِﻄْﺮِ ﻋَﻦْ ﻧَﻔْسيْ ﻓَﺮْﺿًﺎ ﻟﻠﻪِ ﺗَﻌَﺎﻟَﻰ</h5>
-                        <p>"Nawaytu an ukhrija zakaata al-fitri ‘an nafsi fardhan lillahi ta’ala"</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hitung Lagi</button>
-                        <a class="btn btn-success" href="payment.html">Lanjut Pembayaran</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- SCROLL TO TOP BUTTON-->
         <a class="scroll-to-top rounded" href="#page-top">

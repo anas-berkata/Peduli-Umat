@@ -47,13 +47,6 @@
                 <div class="sidebar-brand-text mx-3">Peduli Umat</div>
             </a>
 
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="profile-details.html.html">
-                    <img class="img-profile mx-auto" src="assets/img/users/user-anas.png">
-                    <span>Anas Berkata</span>
-                </a>
-            </li> -->
-
             <!-- Divider -->
             <hr class="sidebar-divider mb-0">
 
@@ -67,13 +60,53 @@
 
             <!-- Nav Item - Donation -->
             <li class="nav-item">
-                <a class="nav-link" href="profile.html"><i class="fas fa-fw fa-wallet"></i> <span>Donation</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDonation"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Donation</span>
+                </a>
+                <div id="collapseDonation" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Donation Menu:</h6>
+                        <a class="collapse-item" href="donation.html">My Donation</a>
+                        <a class="collapse-item" href="donation-routine.html">Routine Donation</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Zakat -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseZakat"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-coins"></i>
+                    <span>Zakat</span>
+                </a>
+                <div id="collapseZakat" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Zakat Menu:</h6>
+                        <a class="collapse-item" href="zakat.html">Zakat</a>
+                        <a class="collapse-item" href="zakat-maal.html">Zakat Maal</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Adoption -->
-            <li class="nav-item active">
-                <a class="nav-link" href="adoption.html"><i class="fas fa-fw fa-child"></i>
-                    <span>Adoption</span></a>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdoption"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-child"></i>
+                    <span>Adoption</span>
+                </a>
+                <div id="collapseAdoption" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Adoption Menu:</h6>
+                        <a class="collapse-item" href="adoption.html">My Orphans</a>
+                        <a class="collapse-item" href="adoption-list-orphans.html">List Orphans</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Personal Detail -->
@@ -109,7 +142,8 @@
             <!-- Nav Item - Term & Conditions -->
             <li class="nav-item mb-5">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal"><i
-                        class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+                        class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span></a>
             </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
@@ -278,40 +312,47 @@
                                 </div>
                                 <div class="col-lg-12 col-12">
                                     <div class="profile-adopted">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatibus esse
-                                        amet
-                                        accusantium veritatis vitae impedit quaerat voluptate hic accusamus modi
-                                        recusandae
-                                        fugiat distinctio ipsa voluptates ipsum qui odio est id ducimus, minima
-                                        possimus. Ipsa
-                                        accusantium assumenda, natus, magnam commodi sed iure placeat ipsam dignissimos
-                                        eius
-                                        quam quisquam consectetur corrupti culpa voluptas incidunt, tenetur ullam
-                                        maxime?
-                                        Voluptas at repudiandae doloremque dolorem nihil voluptates totam quam libero
-                                        dolor
-                                        voluptatum. Recusandae repellendus quis voluptas omnis saepe! Quidem eius
-                                        consequuntur
-                                        assumenda reiciendis reprehenderit. Ipsum consequatur ea quam, ducimus dolore
-                                        impedit
-                                        voluptatibus ab excepturi alias inventore ipsa voluptas suscipit hic quaerat
-                                        minima
-                                        cumque. Omnis?</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatibus
+                                            esse
+                                            amet
+                                            accusantium veritatis vitae impedit quaerat voluptate hic accusamus modi
+                                            recusandae
+                                            fugiat distinctio ipsa voluptates ipsum qui odio est id ducimus, minima
+                                            possimus. Ipsa
+                                            accusantium assumenda, natus, magnam commodi sed iure placeat ipsam
+                                            dignissimos
+                                            eius
+                                            quam quisquam consectetur corrupti culpa voluptas incidunt, tenetur ullam
+                                            maxime?
+                                            Voluptas at repudiandae doloremque dolorem nihil voluptates totam quam
+                                            libero
+                                            dolor
+                                            voluptatum. Recusandae repellendus quis voluptas omnis saepe! Quidem eius
+                                            consequuntur
+                                            assumenda reiciendis reprehenderit. Ipsum consequatur ea quam, ducimus
+                                            dolore
+                                            impedit
+                                            voluptatibus ab excepturi alias inventore ipsa voluptas suscipit hic quaerat
+                                            minima
+                                            cumque. Omnis?</p>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sapiente a
-                                        molestiae
-                                        voluptas cum ipsum id reprehenderit repellendus dolore alias dignissimos, animi
-                                        ea unde
-                                        laboriosam tenetur inventore eum. Dignissimos dolorum exercitationem officia
-                                        vel,
-                                        deleniti soluta suscipit rerum autem, illo dolore eos? Iure debitis in enim
-                                        dignissimos
-                                        exercitationem modi tenetur laborum?</p>
+                                            molestiae
+                                            voluptas cum ipsum id reprehenderit repellendus dolore alias dignissimos,
+                                            animi
+                                            ea unde
+                                            laboriosam tenetur inventore eum. Dignissimos dolorum exercitationem officia
+                                            vel,
+                                            deleniti soluta suscipit rerum autem, illo dolore eos? Iure debitis in enim
+                                            dignissimos
+                                            exercitationem modi tenetur laborum?</p>
                                     </div>
-                                    
+
                                     <div class="pay-detail">
                                         <h5 class="mb-4 float-left">Riwayat Pembiayaan</h5>
                                         <a href="" class="btn btn-primary btn-rounded mx-2 mb-4 float-right">Print</a>
-                                        <a href="payment.html" class="btn btn-success btn-rounded mx-2 mb-4 float-right">Tambah Biaya Yatim</a>
+                                        <a href="payment.html"
+                                            class="btn btn-success btn-rounded mx-2 mb-4 float-right">Tambah Biaya
+                                            Yatim</a>
 
                                         <table class="table small">
                                             <thead class="thead-light">
@@ -353,7 +394,7 @@
                                         </table>
                                     </div>
 
-                                    
+
                                 </div>
                             </div>
 

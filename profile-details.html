@@ -47,13 +47,6 @@
                 <div class="sidebar-brand-text mx-3">Peduli Umat</div>
             </a>
 
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="profile-details.html.html">
-                    <img class="img-profile mx-auto" src="assets/img/users/user-anas.png">
-                    <span>Anas Berkata</span>
-                </a>
-            </li> -->
-
             <!-- Divider -->
             <hr class="sidebar-divider mb-0">
 
@@ -67,17 +60,59 @@
 
             <!-- Nav Item - Donation -->
             <li class="nav-item">
-                <a class="nav-link" href="profile.html"><i class="fas fa-fw fa-wallet"></i> <span>Donation</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDonation"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Donation</span>
+                </a>
+                <div id="collapseDonation" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Donation Menu:</h6>
+                        <a class="collapse-item" href="donation.html">My Donation</a>
+                        <a class="collapse-item" href="donation-routine.html">Routine Donation</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Zakat -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseZakat"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-coins"></i>
+                    <span>Zakat</span>
+                </a>
+                <div id="collapseZakat" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Zakat Menu:</h6>
+                        <a class="collapse-item" href="zakat.html">Zakat</a>
+                        <a class="collapse-item" href="zakat-maal.html">Zakat Maal</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Adoption -->
             <li class="nav-item">
-                <a class="nav-link" href="adoption.html"><i class="fas fa-fw fa-child"></i> <span>Adoption</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdoption"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-child"></i>
+                    <span>Adoption</span>
+                </a>
+                <div id="collapseAdoption" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Adoption Menu:</h6>
+                        <a class="collapse-item" href="adoption.html">My Orphans</a>
+                        <a class="collapse-item" href="adoption-list-orphans.html">List Orphans</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Personal Detail -->
-            <li class="nav-item active">
-                <a class="nav-link" href="profile-details.html"> <i class="fas fa-fw fa-user"></i> <span>Personal Detail</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="profile-details.html"> <i class="fas fa-fw fa-user"></i> <span>Personal
+                        Detail</span></a>
             </li>
 
             <!-- Divider -->
@@ -107,7 +142,8 @@
             <!-- Nav Item - Term & Conditions -->
             <li class="nav-item mb-5">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal"><i
-                        class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+                        class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span></a>
             </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
@@ -261,14 +297,18 @@
                                 </div>
                                 <div class="col-lg-3 col-12 p-2 sm-text-center">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><h5>Anas Berkata</h5></li>
+                                        <li class="list-group-item">
+                                            <h5>Anas Berkata</h5>
+                                        </li>
                                         <li class="list-group-item">+62 851 5633 4607</li>
                                         <li class="list-group-item">ideanasdesain@gmail.com</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-3 col-12 pt-4 mb-4 ml-auto sm-text-center">
-                                    <a href="profile-edit-bio.html" class="btn btn-success btn-rounded my-2">Sunting Profile</a>
-                                    <a href="profile-edit-password.html" class="btn btn-success btn-rounded my-2">Ganti Password</a>
+                                    <a href="profile-edit-bio.html" class="btn btn-success btn-rounded my-2">Sunting
+                                        Profile</a>
+                                    <a href="profile-edit-password.html" class="btn btn-success btn-rounded my-2">Ganti
+                                        Password</a>
                                 </div>
                                 <div class="col-lg-12 col-12 mt-3">
                                     <div class="row">
@@ -277,16 +317,23 @@
                                                 <h5 class="display-5">Sekilas</h5>
 
                                                 <ul class="list-group list-group-flush small pr-3">
-                                                    <li class="list-group-item"><i class="fas fa-map-marker-alt mr-3"></i> Protanmas Samolo Indah, Jl. Cendana IV C5/15 Karangtengah Cianjur, Jawa Barat. 43281</li>
-                                                    <li class="list-group-item"><i class="fas fa-user mr-3"></i> @anasberkata</li>
-                                                    <li class="list-group-item"><i class="fab fa-whatsapp mr-3"></i> +62 851 5603 4607</li>
-                                                    <li class="list-group-item"><i class="fas fa-envelope mr-3"></i> ideanasdesain@gmail.com</li>
+                                                    <li class="list-group-item"><i
+                                                            class="fas fa-map-marker-alt mr-3"></i> Protanmas Samolo
+                                                        Indah, Jl. Cendana IV C5/15 Karangtengah Cianjur, Jawa Barat.
+                                                        43281</li>
+                                                    <li class="list-group-item"><i class="fas fa-user mr-3"></i>
+                                                        @anasberkata</li>
+                                                    <li class="list-group-item"><i class="fab fa-whatsapp mr-3"></i> +62
+                                                        851 5603 4607</li>
+                                                    <li class="list-group-item"><i class="fas fa-envelope mr-3"></i>
+                                                        ideanasdesain@gmail.com</li>
                                                 </ul>
 
                                                 <h5 class="display-5 mt-3">Pekerjaan</h5>
 
                                                 <ul class="list-group list-group-flush small pr-3">
-                                                    <li class="list-group-item"><i class="fas fa-briefcase mr-3"></i> Graphic Designer</li>
+                                                    <li class="list-group-item"><i class="fas fa-briefcase mr-3"></i>
+                                                        Graphic Designer</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -296,9 +343,12 @@
                                                 <h5 class="display-5">Social Media</h5>
 
                                                 <ul class="list-group list-group-flush small pr-3">
-                                                    <li class="list-group-item"><i class="fab fa-facebook-f mr-3"></i> facebook.com/anasberkata</li>
-                                                    <li class="list-group-item"><i class="fab fa-instagram mr-3"></i> instagram.com/anasberkata</li>
-                                                    <li class="list-group-item"><i class="fab fa-twitter mr-3"></i> twitter.com/anasberkata</li>
+                                                    <li class="list-group-item"><i class="fab fa-facebook-f mr-3"></i>
+                                                        facebook.com/anasberkata</li>
+                                                    <li class="list-group-item"><i class="fab fa-instagram mr-3"></i>
+                                                        instagram.com/anasberkata</li>
+                                                    <li class="list-group-item"><i class="fab fa-twitter mr-3"></i>
+                                                        twitter.com/anasberkata</li>
                                                 </ul>
 
                                                 <!-- <h5 class="display-5 mt-4">Riwayat</h5>

@@ -47,13 +47,6 @@
                 <div class="sidebar-brand-text mx-3">Peduli Umat</div>
             </a>
 
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="profile-details.html.html">
-                    <img class="img-profile mx-auto" src="assets/img/users/user-anas.png">
-                    <span>Anas Berkata</span>
-                </a>
-            </li> -->
-
             <!-- Divider -->
             <hr class="sidebar-divider mb-0">
 
@@ -67,13 +60,53 @@
 
             <!-- Nav Item - Donation -->
             <li class="nav-item">
-                <a class="nav-link" href="profile.html"><i class="fas fa-fw fa-wallet"></i> <span>Donation</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDonation"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Donation</span>
+                </a>
+                <div id="collapseDonation" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Donation Menu:</h6>
+                        <a class="collapse-item" href="donation.html">My Donation</a>
+                        <a class="collapse-item" href="donation-routine.html">Routine Donation</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Zakat -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseZakat"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-coins"></i>
+                    <span>Zakat</span>
+                </a>
+                <div id="collapseZakat" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Zakat Menu:</h6>
+                        <a class="collapse-item" href="zakat.html">Zakat</a>
+                        <a class="collapse-item" href="zakat-maal.html">Zakat Maal</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Adoption -->
             <li class="nav-item">
-                <a class="nav-link" href="adoption.html"><i class="fas fa-fw fa-child"></i>
-                    <span>Adoption</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdoption"
+                    aria-expanded="true" aria-controls="collapsePeduliUmat">
+                    <i class="fas fa-fw fa-child"></i>
+                    <span>Adoption</span>
+                </a>
+                <div id="collapseAdoption" class="collapse" aria-labelledby="headingPeduliUmat"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Adoption Menu:</h6>
+                        <a class="collapse-item" href="adoption.html">My Orphans</a>
+                        <a class="collapse-item" href="adoption-list-orphans.html">List Orphans</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - Personal Detail -->
@@ -86,7 +119,7 @@
             <hr class="sidebar-divider">
 
             <!-- Nav Item - Donation -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeduliUmat"
                     aria-expanded="true" aria-controls="collapsePeduliUmat">
                     <i class="fas fa-fw"><img class="img-tr" src="assets/img/icons/Icon Peduli Umat sm.png"></i>
@@ -109,7 +142,8 @@
             <!-- Nav Item - Term & Conditions -->
             <li class="nav-item mb-5">
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal"><i
-                        class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+                        class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span></a>
             </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
