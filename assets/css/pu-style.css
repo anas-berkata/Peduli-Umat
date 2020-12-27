@@ -707,3 +707,18 @@ CAROUSEL
     visibility: visible;
   }
 }
+
+/* FILTER BUTTON */
+
+button.filter-button {
+  background: transparent;
+  border: 0;
+}
+
+.btn-secondary-main {
+  background-color: #aeaeae;
+  background-image: linear-gradient(to right, #a9a9a9, #bebebe);
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+}

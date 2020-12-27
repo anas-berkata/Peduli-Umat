@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLE -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Peduli Umat Style -->
+    <link rel="stylesheet" href="assets/css/pu-style.css">
+
+    <!-- FONTS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/font/poppins/style.css">
+    <link rel="stylesheet" href="assets/font/lato/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/logos/Favicon.png">
+
+    <!-- JQUERY LIBRARY ONLY <HEAD> -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <title>Peduli Umat</title>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logos/Logo PU Green.svg" width="100" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="campaign.html">Campaign <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="term-condition.html">Term & Condition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link btn btn-no-background" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-main text-white" href="registration.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HITUNG ZAKAT -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+
+                    <h3 class="text-center display-5 mt-5">Hitung Zakat Harta (Maal) Kamu</h3>
+                    <hr class="devider my-5">
+
+                    <form action="" method="post">
+                        <div class="form-group mb-4">
+                            <label class="ml-4 small" for="inputName">Nilai Deposito / Tabungan / Giro</label>
+                            <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                placeholder="Rp.">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="ml-4 small" for="inputPhone">Emas, Perak, Permata atau
+                                sejenisnya</label>
+                            <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                placeholder="Rp.">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="ml-4 small" for="inputPhone">Nilai Properti & kendaraan</label>
+                            <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                placeholder="Rp.">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="ml-4 small" for="inputEmail">Lainnya</label>
+                            <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                placeholder="Rp.">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="ml-4 small" for="inputEmail">Hutang pribadi jatuh tempo tahun
+                                ini</label>
+                            <input type="text" class="form-control" name="currency-field03" id="currency-field"
+                                pattern="^\Rp.\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                placeholder="Rp.">
+                        </div>
+
+                        <a class="btn btn-main" href="#" data-toggle="modal" data-target="#zakatMaalModal">Hitung Jumlah
+                            Zakat</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="assets/img/logos/Logo PU White.png" alt="Logo Peduli Umat">
+                    <p class="text-white mt-5">Yayasan Peduli Umat Merupakan yayasan yang mempelopori pembangunan umat.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush text-white">
+                        <li class="list-group-item">
+                            <h4 class="text-green">Tentang Kami</h4>
+                        </li>
+                        <li class="list-group-item"><a href="#">Sekilas Peduli Umat</a></li>
+                        <li class="list-group-item"><a href="#">Campaign</a></li>
+                        <li class="list-group-item"><a href="#">Blog</a></li>
+                        <li class="list-group-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush text-white">
+                        <li class="list-group-item">
+                            <h4 class="text-green">Program</h4>
+                        </li>
+                        <li class="list-group-item"><a href="#">Hafidzah Al-Qur'an</a></li>
+                        <li class="list-group-item"><a href="#">Pondok Pasantren</a></li>
+                        <li class="list-group-item"><a href="#">Mitra Usaha</a></li>
+                        <li class="list-group-item"><a href="#">Sosial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group list-group-flush text-white">
+                        <li class="list-group-item">
+                            <h4 class="text-green">Kontak Kami</h4>
+                        </li>
+                        <li class="list-group-item">Yayasan Peduli Umat
+                            Jl. Angsa Timur No. 32 Yogyakarta</li>
+                        <li class="list-group-item mt-3">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href=""><i class="fab fa-2x fa-whatsapp"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fab fa-2x fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fab fa-2x fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a href=""><i class="fab fa-2x fa-instagram"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-12 text-center text-white">
+                    <p>Copyright &copy; 2020. Yayasan Peduli Umat. All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ZAKAT MODAL -->
+    <div class="modal fade" id="zakatMaalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Jumlah Zakat Maal Anda</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Jumlah zakat anda setelah perhitungan harta adalah</p>
+                    <h5 class="my-3">Rp. 250.000</h5>
+
+                    <p>Niat Zakat:</p>
+                    <h5>ﻧَﻮَﻳْﺖُ أَﻥْ أُﺧْﺮِﺝَ ﺯَﻛَﺎﺓَ ﺍﻟْﻔِﻄْﺮِ ﻋَﻦْ ﻧَﻔْسيْ ﻓَﺮْﺿًﺎ ﻟﻠﻪِ ﺗَﻌَﺎﻟَﻰ</h5>
+                    <p>"Nawaytu an ukhrija zakaata al-fitri ‘an nafsi fardhan lillahi ta’ala"</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary-main" type="button" data-dismiss="modal">Hitung
+                        Lagi</button>
+                    <a class="btn btn-main" href="login.html">Lanjut Pembayaran</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END -->
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- PEDULI UMAT JAVASCRIPT-->
+    <script src="assets/js/pu-user.js"></script>
+    <script src="assets/js/pu-js.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+
+    <!-- DATA TABLE -->
+    <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/datatables.js"></script>
+
+    <!-- CHART -->
+    <script src="assets/vendor/chart.js/Chart.min.js"></script>
+    <script src="assets/js/chart-area.js"></script>
+    <script src="assets/js/chart-pie.js"></script>
+</body>
+
+</html>
