@@ -722,3 +722,18 @@ button.filter-button {
   border-radius: 50px;
   font-size: 14px;
 }
+
+#loadMore {
+  transition: all 600ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+}
+
+#loadMore:hover {
+  background-color: #fff;
+}
+
+.program-item {
+  display: none;
+}

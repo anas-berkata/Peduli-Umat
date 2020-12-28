@@ -110,3 +110,19 @@ function formatCurrency(input, blur) {
 	caret_pos = updated_len - original_len + caret_pos;
 	input[0].setSelectionRange(caret_pos, caret_pos);
 }
+
+
+// Load More
+$(function () {
+    $("div.program-item").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div:hidden").slice(0, 4).slideDown();
+        if ($("div:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 500);
+    });
+});

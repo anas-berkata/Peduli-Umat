@@ -13,7 +13,8 @@ Revision
 - Payment Page Edit
 - Image Upload Preview in Form Page
 - Add Dafault Image (Photo Profile, Campaign, Stories and Icon)
-
-Update Revision
 - Zakat Page at home before login
 - Icon for filter in stories pages
+
+Update Revision
+- add Load More button function (Stories Page)
